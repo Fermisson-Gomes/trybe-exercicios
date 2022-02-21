@@ -1,0 +1,9 @@
+azul
+branco
+cinza
+marelo
+marrom
+preto
+rosa
+verde
+vermelho
