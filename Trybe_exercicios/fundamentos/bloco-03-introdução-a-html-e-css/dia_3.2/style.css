@@ -1,0 +1,29 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  ul {
+    background-color: aquamarine;
+    font-style: oblique;
+    line-height: 15px;
+    text-decoration: line-through;
+  }
+
+  li {
+    background-color: black;
+  }
+
+  .list{
+    background-color: coral;
+  }
