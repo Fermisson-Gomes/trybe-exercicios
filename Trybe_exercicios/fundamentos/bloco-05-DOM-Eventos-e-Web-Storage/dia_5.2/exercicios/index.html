@@ -61,7 +61,11 @@
       titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
       let corpo = document.body;
       corpo.appendChild(titulo);
-      
+
+      let mainTag = document.createElement('main');
+      mainTag.className = 'main-content';
+      corpo.appendChild(mainTag);
+
 
     </script>
   </body>
