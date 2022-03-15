@@ -71,8 +71,16 @@
       mainTag.appendChild(sectionCenter);
 
       let pTag = document.createElement('p');
-      pTag.innerText = "bokura wa bokura wa ano kaketa tsuki no hanbun o sagashite kodoku o wakeau koto ga dekita nara mouichido chikau yo shikakui benchi suwari bon'yari nagameru sora omoidasu nda kinou no you ni sasayaka na egao sasaina iiai mo dore dake boku o tsuyoku saseta darou";
+      pTag.innerText = "bokura wa bokura wa ano kaketa tsuki no hanbun o sagashite kodoku o wakeau koto ga dekita nara mouichido chikau yo";
       sectionCenter.appendChild(pTag);
+
+      let sectionLeft = document.createElement('section');
+      sectionLeft.className = 'left-content';
+      mainTag.appendChild(sectionLeft);
+
+      let sectionRight = document.createElement('section');
+      sectionRight.className = 'right-content';
+      mainTag.appendChild(sectionRight);
 
     </script>
   </body>
