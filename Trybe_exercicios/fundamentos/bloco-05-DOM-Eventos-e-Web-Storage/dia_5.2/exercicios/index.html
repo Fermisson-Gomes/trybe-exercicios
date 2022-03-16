@@ -57,30 +57,29 @@
   </head>
   <body>
     <script>
-      let titulo = document.createElement('h1');
-      titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+      function create(pai, element, className){
+        let div = document.createElement(element);
+        div.className = className;
+        pai.appendChild(div);
+        return div;
+      }
+
       let corpo = document.body;
-      corpo.appendChild(titulo);
 
-      let mainTag = document.createElement('main');
-      mainTag.className = 'main-content';
-      corpo.appendChild(mainTag);
 
-      let sectionCenter = document.createElement('section');
-      sectionCenter.className = 'center-content';
-      mainTag.appendChild(sectionCenter);
+      let titulo = create(corpo, 'h1', 'tittle');
+      titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
 
-      let pTag = document.createElement('p');
+      let mainTag = create(corpo, 'main', 'main-content');
+
+      let sectionCenter = create(mainTag, 'section', 'center-content');
+
+      let pTag = create(sectionCenter, 'p', 'paragraph-music');
       pTag.innerText = "bokura wa bokura wa ano kaketa tsuki no hanbun o sagashite kodoku o wakeau koto ga dekita nara mouichido chikau yo";
-      sectionCenter.appendChild(pTag);
 
-      let sectionLeft = document.createElement('section');
-      sectionLeft.className = 'left-content';
-      mainTag.appendChild(sectionLeft);
+      let sectionLeft = create(mainTag, 'section', 'left-content');
 
-      let sectionRight = document.createElement('section');
-      sectionRight.className = 'right-content';
-      mainTag.appendChild(sectionRight);
+      let sectionRight = create(mainTag, 'section', 'right-content');
 
     </script>
   </body>

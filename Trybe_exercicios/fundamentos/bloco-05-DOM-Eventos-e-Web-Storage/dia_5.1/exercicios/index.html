@@ -47,6 +47,41 @@
         document.getElementById('text').innerText = 'um profissional de tecnologia capacitado e empregado';
       }
       mudaTexto();
+
+      function mudaCorAmareloVerde(){
+        document.getElementsByClassName("main-content")[0].style.backgroundColor = 'rgb(76,164,109)';
+      }
+
+      mudaCorAmareloVerde();
+
+      function mudaCorVermelhoBranco(){
+        document.getElementsByClassName("center-content")[0].style.backgroundColor = 'white';
+      }
+
+      mudaCorVermelhoBranco();
+
+      function corrigeParagrafo(){
+        document.getElementsByTagName("h1")[0].innerText = 'Exercício 5.1 - JavaScript';
+      }
+
+      corrigeParagrafo();
+      
+      function paragrafoMaisculo(){
+        let paragrafo = document.getElementsByTagName("p");
+        for (let i = 0; i < paragrafo.length; i += 1){
+        paragrafo[i].innerText = paragrafo[i].innerText.toUpperCase();
+        }
+      }
+      paragrafoMaisculo();
+
+      function exibirTagP(){
+        let tagP = document.getElementsByTagName("p");
+        for (let i = 0; i < tagP.length; i += 1){
+          console.log(tagP[i].innerText);
+        }
+      }
+
+      exibirTagP();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
