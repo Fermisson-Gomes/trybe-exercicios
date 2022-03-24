@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Leitor de Textos</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>Text Reader</h1>
+  </header>
+  <section class="confi-menu">
+    <header id="">
+      <h3>configurações</h3>
+    </header>
+    <section id="">
+      <button class="button" onclick="changeToDarkMode()">Modo escuro</button>
+      <button class="button" >Tamanho da fonte</button>
+      <button class="button">Espaçamento das linhas</button>
+      <button class="button" onclick="changeFontColor()">Cor da fonte</button>
+      <section id="color-table"></section>
+      <button class="button">Tipo da fonte</button>
+      <button class="button add" onclick="addToStorage()">Adicionar configurações</button>
+    </section>
+  </section>
+  <main class="text-content">
+    <h1 class="text-section-title t">Book page</h1>
+
+    <p class="paragraph t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nulla nibh. Proin accumsan eros quis diam porttitor facilisis. Suspendisse turpis velit, facilisis ac dui non, sollicitudin pharetra turpis. Ut cursus pretium orci, nec scelerisque mi auctor ac. Fusce mauris leo, iaculis eget auctor sed, varius euismod augue. Praesent vel tortor non elit consectetur mollis congue eget urna. Sed at orci iaculis, efficitur libero ac, convallis ex. Integer sed egestas turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed pharetra odio eget eleifend placerat.</p>
+
+      <p class="paragraph t">Integer euismod sodales ipsum ac pulvinar. Praesent viverra, neque ut feugiat accumsan, ex ex faucibus ipsum, id maximus orci diam in diam. Quisque ultricies viverra dui, vitae blandit quam. Phasellus a arcu tempor, condimentum leo nec, lacinia nibh. Nulla convallis elit ut elit euismod, in congue ligula viverra. Vestibulum cursus libero ut arcu eleifend, a imperdiet purus tristique. Maecenas non malesuada erat. Maecenas porttitor nulla ante, vitae luctus ante volutpat eget. Sed ac urna eu quam tincidunt malesuada at et est. Sed blandit sodales nisl, non porttitor ante convallis at. Duis quis nisi sit amet lectus elementum accumsan quis commodo arcu. Aliquam vel elit in metus ultricies venenatis id vitae tortor. Nulla at enim nisl.</p>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
