@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="text-muted header-content content">
+        <h1 class="display-1">Concurso TrybeTrip</h1>
+        <h2>formulario de inscrição</h2>
+      </header>
+      <form class="content" action="" method="post">
+        <section>
+          <div class="mb-3">
+            <label class="form-label" for="nome-completo"
+              >Nome Completo:
+            </label>
+            <input
+              type="text"
+              id="nome-completo"
+              name="nome-completo"
+              minlength="10"
+              maxlength="40"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">E-mail: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              minlength="10"
+              maxlength="50"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <p class="lead">Destino Preferido</p>
+            <section class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="destino-preferido"
+                id="destino-1"
+                value="cidade"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="destino-1">Cidade</label>
+            </section>
+            <section class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="destino-preferido"
+                id="destino-2"
+                value="praia"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="destino-2">Praia</label>
+            </section>
+            <section class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="destino-preferido"
+                id="destino-3"
+                value="campo"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="destino-3">Campo</label>
+            </section>
+            <section class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="destino-preferido"
+                id="destino-4"
+                value="montanhas"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="destino-4">Montanhas</label>
+            </section>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="resumo"
+              >Porque você deveria ser o vencedor do concurso TrybeTrip?</label
+            >
+            <textarea
+              name="resumo"
+              id="resumo"
+              cols="30"
+              rows="10"
+              maxlength="500"
+              class="form-control"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="data"
+              >Qual a melhor data para a viagem?</label
+            >
+            <input type="date" name="data" id="data" class="form-control"/>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="oportunidades"
+                id="oportunidades"
+                value="oportunidades-sim"
+              />
+              <label class="form-check-label lead" for="oportunidades">
+                Quer receber outras oportunidades incriveis oferecidas pela
+                Trybe?
+              </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="uso-imagens"
+                value="uso-imagens-ok"
+                id="uso-imagens"
+              />
+              <label class="form-check-label lead" for="uso-imagens">
+                Concordo que as imagens de minhas feris poderão ser usadas na
+                para divulgação de futuros concursos.
+              </label>
+            </div>
+          </div>
+          <button type="submit" id="btn-submit" class="btn btn-1 btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-danger" id="btn-reset">Limpar Tudo</button>
+        </section>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
