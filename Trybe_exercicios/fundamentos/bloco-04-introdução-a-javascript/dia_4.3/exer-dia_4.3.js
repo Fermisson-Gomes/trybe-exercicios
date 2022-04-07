@@ -1,12 +1,12 @@
-// let numero = 10;
+let numero = 4;
 
-// let fatorial = 1;
+let fatorial = 1;
 
-// for (let index = numero; index > 0; index -= 1) {
-//   fatorial = fatorial * index;
-// }
+for (let index = numero; index > 0; index -= 1) {
+  fatorial = fatorial * index;
+}
 
-// console.log(fatorial)
+console.log(fatorial)
 
 // let numero = 1;
 

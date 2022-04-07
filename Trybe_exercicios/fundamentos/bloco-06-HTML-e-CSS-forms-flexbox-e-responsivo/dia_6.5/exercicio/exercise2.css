@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container header {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.container header ul {
+  display: flex;
+}
+
+.container header p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container header ul li {
+  list-style: none;
+  margin-right: 10px;
+}
