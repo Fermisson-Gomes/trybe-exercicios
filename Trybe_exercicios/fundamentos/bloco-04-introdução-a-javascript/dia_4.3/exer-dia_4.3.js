@@ -6,37 +6,54 @@ for (let index = numero; index > 0; index -= 1) {
   fatorial = fatorial * index;
 }
 
-console.log(fatorial)
+// console.log(fatorial)
 
-// let numero = 1;
 
-// let fatorial = 1;
+let word = 'trybe';
 
-// for (let index = numero; index <= 10; index += 1) {
-//   fatorial = fatorial * index;
-// }
+let newWord = '';
 
-// console.log(fatorial);
-
-// let word = 'trybe';
-
-// let newWord = '';
-
-// for (let index = word.length -1; index >= 0; index -= 1){
-//   newWord += word[index];
-// }
+for (let index = word.length -1; index >= 0; index -= 1){
+  newWord += word[index];
+}
 
 // console.log(newWord);
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = '';
-let menorPalavra = '';
 
+let maiorPalavra = array[0];
+let menorPalavra = array[0];
 
-for (let i = 0; i <= array.length; i += 1) {
-  if (maiorPalavra < array[i].length) {
-    maiorPalavra = array[i];
+for (let index = 0; index < array.length; index += 1) {
+  if (array[index].length > maiorPalavra.length) {
+    maiorPalavra = array[index];
   }
 }
 
-console.log(maiorPalavra);
+for (let index = 0; index < array.length; index += 1) {
+  if (array[index].length < menorPalavra.length) {
+    menorPalavra = array[index];
+  }
+}
+
+// console.log(maiorPalavra);
+// console.log(menorPalavra);
+
+let maiorNumeroPrimo = 0;
+
+for (let numeroInicial = 0; numeroInicial <= 50; numeroInicial += 1) {
+  let isPrime = true;
+  for (let divisor = 2; divisor < numeroInicial
+; divisor += 1) {
+    if (numeroInicial
+   % divisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    maiorNumeroPrimo = numeroInicial
+;
+  }
+}
+
+// console.log(maiorNumeroPrimo);

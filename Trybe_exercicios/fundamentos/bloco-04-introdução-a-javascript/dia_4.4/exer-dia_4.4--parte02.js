@@ -49,19 +49,48 @@
 
 // maiorNome(nomes);
 
-let inteiros = [2, 3, 2, 5, 8, 2, 3]; 
-let maisRepetido = 0;
-
-function inteiroMaisRepetido(arrayNumeros){
-  let aparece = 1;
-  for (key in arrayNumeros) {
-    for (i in arrayNumeros) {
-      if (arrayNumeros[key] === arrayNumeros[i]) {
-        aparece += 1;
+function maisRepetido(numeros) {
+  let repetido = 0;
+  let numero = 0;
+  let indexNumero = 0;
+  for (let index in numeros) {
+    let vNumero = numeros[index];
+    for (let index2 in numeros) {
+      if (vNumero === numeros[index2]) {
+        numero += 1;
       }
     }
+    if (numero > repetido) {
+      repetido = numero;
+      indexNumero = index;
+    }
+    numero = 0;
   }
-  console.log(maisRepetido)
+  return numeros[indexNumero];
 }
 
-inteiroMaisRepetido(inteiros);
+// console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+function somaTodosNumeros(numeros) {
+  let soma = 0;
+  for (let index = 1; index <= numeros; index += 1) {
+    soma = soma + index;
+  }
+  return soma;
+}
+// console.log(somaTodosNumeros(5));
+
+function verificaFimPalavra(palavra, fimPalavra) {
+  palavra = palavra.split('');
+  fimPalavra = fimPalavra.split('');
+  trueFalse = true;
+  for (let index = 0; index < fimPalavra.length; index += 1) {
+    if (palavra[palavra.length - fimPalavra.length + index] != fimPalavra[index]) {
+      trueFalse = false;
+    }
+  }
+  return trueFalse;
+}
+
+// console.log(verificaFimPalavra('trybe', 'be')); 
+// console.log(verificaFimPalavra('joaofernando', 'fernan')); 
