@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Fermisson-Gomes/trybe-exercicios#readme",
   "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-plugin-react": "^7.30.0",
     "jest": "^27.5.1"
   }
 }
